@@ -7,26 +7,6 @@
 
 class Item;
 
-/*
-IDEA:
-    Recipe:
-        [0, 1]
-        [2, 3]
-        Offsets from 0,0:
-            0: 0, 0
-            1: 1, 0
-            2: 0, 1
-            3: 1, 1
-        If we scale this to a 3x3, it can either start at the top left corner, or in the middle, and still work.
-        How we can check this?  If each item's offsets, are the same offset from the top left corner
-        In the case of either:
-        [0, 1, 0]      [0, 0, 0]
-        [2, 3, 0]  or  [0, 0, 1]
-        [0, 0, 0]      [0, 2, 3]
-        They're both the exact same recipe, just in a different offset.  In this case,
-        the offset is 1, 1, as the original recipe, in a 4x4 manner, is offset by 1 to the right, 1 down, to start in the center of the grid.
-*/
-
 class Recipe {
     private:
         std::vector<std::pair<Item*, int>> _recipe;

@@ -44,5 +44,19 @@ int main() {
     Counter counter(machine_frame, 5);
     Counter::print(counter);
 
+    // OUTPUT FORMAT:
+    /*
+        Machine Frame (1):
+            Steel Ingot: 2
+            Glass: 3
+            Iron Ingot: 60
+        }
+        Machine Frame (5):
+            Steel Ingot: 10
+            Glass: 15
+            Iron Ingot: 300
+        }
+    */
+
     return EXIT_SUCCESS;
 }
